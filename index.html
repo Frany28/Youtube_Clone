@@ -5,8 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube_Clone</title>
   <link rel="stylesheet" href="./Css/style.css">
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
 </head>
 <body>
+  <!----BARRA DE NAVEGACION----->
+  <nav>
+    <!--Parte superior izquierda-->
+    <div class="right">
+      <!--Boton de despliegue en barra lateral izquierda-->
+      <button><i class="fa-solid fa-bars" style="color: #ffffffe1;"></i></button>
+      <!--Logo de Youtube que te redirecciona a la pagina original-->
+      <a href="https://www.youtube.com/">
+        <img width="115px" src="./Img/YouTube-logo-black-background-3-Photoroom.png" alt="YoutubeLogo">
+      </a>
+    </div>
+    <!--Parte central-->
+    <div>
+      <!--Boton y barra de busqueda-->
+      <!--RECORDAR QUE DEBEMOS ESCONDER LA BARRA PARA VISUALIZACION EN MOVIL-->
+      <form class="search">
+        <input type="text" placeholder="Buscar" id="Busqueda">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+      </form>
+    </div>
+    <!--Parte superior izquierda-->
+    <div>
+      <!--Boton de acceder a tu cuenta de google-->
+      <a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Des-419%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&ec=65620&hl=es-419&passive=true&service=youtube&uilel=3&ifkv=AaSxoQzWHwqu57HJ44jrMf2JQ-JxqkXw4EKu2xwYdut8nTkP-fn7d7meS0Igazg7oX77muf4EWZiLg&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+        <button type="submit"><img width="40px" src="./Img/icone-utilisateur-bleu.png" alt="Acceder">Acceder</button>
+      </a>
+    </div>
+  </nav>
+  <!--Barra lateral derecha-->
+  <aside>
+      <div class="items">
+        <!--Boton de inicio-->
+        <div class="star_buttom">
+          <button><i class="fa-solid fa-house" style="color: #ffffff;"></i>Inicio</button>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+  </aside>
+  
   
 </body>
 </html>
