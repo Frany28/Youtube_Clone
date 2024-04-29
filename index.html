@@ -10,49 +10,83 @@
   integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
   crossorigin="anonymous" 
   referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!----BARRA DE NAVEGACION----->
   <nav>
     <!--Parte superior izquierda-->
     <div class="right">
-      <!--Boton de despliegue en barra lateral izquierda-->
-      <button><i class="fa-solid fa-bars" style="color: #ffffffe1;"></i></button>
+      <!--Boton de despliegue en barra izquierda-->
+      <button class="button_bar"><i class="fa-solid fa-bars"></i></button>
       <!--Logo de Youtube que te redirecciona a la pagina original-->
       <a href="https://www.youtube.com/">
         <img width="115px" src="./Img/YouTube-logo-black-background-3-Photoroom.png" alt="YoutubeLogo">
       </a>
     </div>
     <!--Parte central-->
-    <div>
+    <div class="center">
       <!--Boton y barra de busqueda-->
       <!--RECORDAR QUE DEBEMOS ESCONDER LA BARRA PARA VISUALIZACION EN MOVIL-->
-      <form class="search">
-        <input type="text" placeholder="Buscar" id="Busqueda">
-        <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
-      </form>
+      <div >
+        <form>
+        <input class="search" type="text" placeholder="Buscar" id="Busqueda">
+        <button class="button_loupe" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+        </form>
+      </div>
+      <!--Icono de Microfono-->
+      <div>
+        <i class="fa-solid fa-microphone"></i>
+      </div>
     </div>
-    <!--Parte superior izquierda-->
-    <div>
-      <!--Boton de acceder a tu cuenta de google-->
-      <a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Des-419%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&ec=65620&hl=es-419&passive=true&service=youtube&uilel=3&ifkv=AaSxoQzWHwqu57HJ44jrMf2JQ-JxqkXw4EKu2xwYdut8nTkP-fn7d7meS0Igazg7oX77muf4EWZiLg&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+    <!--Parte superior derecha-->
+    <div class="access">
+      <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+      <div>
+        <!--Boton de acceder a tu cuenta de google-->
+        <a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Des-419%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&ec=65620&hl=es-419&passive=true&service=youtube&uilel=3&ifkv=AaSxoQzWHwqu57HJ44jrMf2JQ-JxqkXw4EKu2xwYdut8nTkP-fn7d7meS0Igazg7oX77muf4EWZiLg&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
         <button type="submit"><img width="40px" src="./Img/icone-utilisateur-bleu.png" alt="Acceder">Acceder</button>
-      </a>
+        </a>
+      </div>
     </div>
   </nav>
-  <!--Barra lateral derecha-->
-  <aside>
-      <div class="items">
-        <!--Boton de inicio-->
-        <div class="star_buttom">
-          <button><i class="fa-solid fa-house" style="color: #ffffff;"></i>Inicio</button>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-  </aside>
-  
+   <!--Barra de categoria y videos-->
+   <div>
+    <div class="category">
+    <ul>
+      <li>Todo</li>
+      <li>Música</li>
+      <li>Mixes</li>
+      <li>Videojuegos</li>
+      <li>J-Rock</li>
+      <li>Listas de Reproducción</li>
+      <li>Pop indie</li>
+      <li>Series de televisión</li>
+    </ul>
+    </div>
+  </div>
+  <!--Barra izquierda-->
+  <div class="options" >
+    <!--Boton inicio-->
+    <div class="star">
+      <button><i class="fa-solid fa-house"></i>Inicio</button>
+    </div>
+    <!--Boton de short-->
+    <div class="shorts">
+      <button><img src="./Img/channels4_profile-Photoroom.png" alt="shorts" width="35px">Shorts</button>
+    </div>
+    <!--Boton Suscripciones-->
+    <div class="sub">
+      <button><img src="./Img/Diseño sin título-Photoroom.png" alt="sub" width="55px">Suscripción</button>
+    </div>
+    <!--Boton Tú-->
+    <div class="you">
+      <button><img src="./Img/Diseño sin título (1)-Photoroom.png" alt="you" width="55px">Tú</button>
+    </div>
+  </div>
+ 
   
 </body>
 </html>

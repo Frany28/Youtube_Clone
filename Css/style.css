@@ -1,5 +1,230 @@
 *{
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: #1f1d1d;
+  font-family: "Roboto", sans-serif;
 }
+
+:root{ 
+  --main-color-text: white
+}
+
+/*Fila barra de navegacion*/
+nav{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+}
+
+/*Boton de barra en el navegador*/
+.button_bar{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*Iconos*/
+.fa-solid{
+  color: white;
+  font-size: 19px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  border-radius: 50%;
+  padding: 5px 5px
+}
+
+/*Efecto para que los iconos cambien de color*/
+.fa-solid:hover{
+  background-color: #514e4e98; /* Cambia el color de fondo al pasar el cursor */
+  border-color: #6b6868a7; /* Cambia el color del borde al pasar el cursor */
+}
+
+/*Lado izquierdo de la barra de navegacion */
+.right{
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  gap: 15px;
+  padding-left: 25px;
+}
+
+/*lado central de la barra de navgacion*/
+.center{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  gap: 15px;
+  padding-left: 10px;
+}
+
+/*Barra de busqueda*/
+.search{
+  color: white;
+  flex: 1;
+  background-color:transparent; /* Color de fondo del botón */
+  border:none;
+  outline: 1px solid #4e4d4dd0;
+  cursor: pointer;
+  padding: 10px 15px; /* Ajustar el padding para el tamaño del botón */
+  border-top-left-radius: 20px; /* Hacer el borde superior izquierdo redondeado */
+  border-bottom-left-radius: 20px; /* Hacer el borde inferior izquierdo redondeado */
+  border-top-right-radius: 0; /* Hacer el borde superior derecho plano */
+  border-bottom-right-radius: 0; /* Hacer el borde inferior derecho plano */
+  height: 3vh;
+  width: 75vh;
+  font-size: 15px;
+  display: inline-block; /* Muestra la barra de email en línea */
+  vertical-align: middle; /* Alinea verticalmente con el botón */
+}
+
+.button_loupe{
+  background-color: solid rgb(97, 97, 97); /* Color de fondo del botón */
+  border:none;
+  outline: 1px solid #4e4d4dd0;
+  cursor: pointer;
+  border-top-left-radius: 0; /* Hacer el borde superior izquierdo redondeado */
+  border-bottom-left-radius: 0; /* Hacer el borde inferior izquierdo redondeado */
+  border-top-right-radius: 20px; /* Hacer el borde superior derecho plano */
+  border-bottom-right-radius: 20px; /* Hacer el borde inferior derecho plano */
+  height: 40.3px;
+  width: 9vh;
+  display: inline-block; /* Muestra el botón en línea */
+  vertical-align: middle; /* Alinea verticalmente con la barra de email */
+}
+
+/*lado derecho de barra de navegacion*/
+.access{
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  gap: 30px;
+  padding-right: 20px;
+}
+
+.access button {
+  color: rgb(85, 65, 237); /* Cambia el color de letra del texto dentro del botón */
+  /* Otros estilos si los necesitas */
+  outline: 1px solid #4e4d4dd0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 9px;
+  transition: background-color 0.3s;
+}
+
+.access button:hover{
+  background-color: #0b57c998; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.access img{
+  width: 25px;
+}
+
+/*Barra izquierda*/
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: baseline;
+  padding-left: 5px;
+  width: 72px;
+  height: 640px;
+}
+
+
+.star button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color-text);
+  outline: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px 15px;
+  font-size: 10px;
+  gap: 2px;
+}
+
+.shorts button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color-text);
+  outline: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px 15px;
+  font-size: 10px;
+  gap: 2px;
+}
+
+.sub button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color-text);
+  outline: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px 6px;
+  font-size: 10px;
+  gap: 2px;
+}
+
+.you button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color-text);
+  outline: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px 6px;
+  font-size: 10px;
+  gap: 2px;
+}
+
+.options button:hover{
+  background-color: rgba(99, 91, 91, 0.638);
+}
+
+ul {
+  color: var(--main-color-text);
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items:center;
+  list-style-type: none; /* Elimina los marcadores de la lista */
+  padding-top: 7px;
+  gap: 10px;
+}  
+
+@media only screen and (max-width: 900px){
+  .search{
+    display: none;
+  }
+  .items{
+    display: none;
+  }
+  .button_loupe{
+    outline: none;
+  }
+}
+
