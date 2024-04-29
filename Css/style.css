@@ -208,7 +208,7 @@ nav{
 
 ul{
   display: flex;
-  flex-grow: 1;
+  flex-grow: 2;
   justify-content: center;
   align-items:center;
   list-style-type: none; /* Elimina los marcadores de la lista */
@@ -234,7 +234,7 @@ ul button:hover{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
   .search{
     display: none;
   }
@@ -243,6 +243,9 @@ ul button:hover{
   }
   .button_loupe{
     outline: none;
+  }
+  .options{
+    display: none;
   }
 }
 
