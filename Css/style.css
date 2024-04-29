@@ -95,6 +95,7 @@ nav{
   width: 9vh;
   display: inline-block; /* Muestra el botón en línea */
   vertical-align: middle; /* Alinea verticalmente con la barra de email */
+
 }
 
 /*lado derecho de barra de navegacion*/
@@ -205,18 +206,35 @@ nav{
   background-color: rgba(99, 91, 91, 0.638);
 }
 
-ul {
-  color: var(--main-color-text);
+ul{
   display: flex;
   flex-grow: 1;
   justify-content: center;
   align-items:center;
   list-style-type: none; /* Elimina los marcadores de la lista */
-  padding-top: 7px;
-  gap: 10px;
+  gap: 20px;
+  padding-top: 5px;
 }  
 
-@media only screen and (max-width: 900px){
+ul button{
+  color: var(--main-color-text);
+  background-color: rgba(53, 49, 49, 0.47);
+  padding-top: 7px;
+  gap: 40px;
+  outline: 1px solid #4e4d4dd0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 8px 10px;
+  transition: background-color 0.3s;
+}
+
+ul button:hover{
+  background-color: rgba(99, 91, 91, 0.638);
+}
+
+
+@media only screen and (max-width: 600px){
   .search{
     display: none;
   }
