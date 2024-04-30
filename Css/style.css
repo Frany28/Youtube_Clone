@@ -354,6 +354,9 @@ ul button:hover{
   .ca{
     display: none;
   }
+  .ca1{
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -384,6 +387,13 @@ ul button:hover{
     grid-gap: 9px 10px;
   }
 
+  .ca{
+    display: none;
+  }
+  
+  .fa-arrow-right{
+    left: 95%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
