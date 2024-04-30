@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="icon" href="./Img/icons8-youtube-48.png" type="image/png">
 </head>
 <body>
   <!----BARRA DE NAVEGACION----->
@@ -23,17 +24,17 @@
       <button class="button_bar"><i class="fa-solid fa-bars"></i></button>
       <!--Logo de Youtube que te redirecciona a la pagina original-->
       <a href="https://www.youtube.com/">
-        <img width="115px" src="./Img/YouTube-logo-black-background-3-Photoroom.png" alt="YoutubeLogo">
+        <img width="100px" src="./Img/YouTube-logo-black-background-3-Photoroom.png" alt="YoutubeLogo">
       </a>
     </div>
     <!--Parte central-->
     <div class="center">
       <!--Boton y barra de busqueda-->
       <!--RECORDAR QUE DEBEMOS ESCONDER LA BARRA PARA VISUALIZACION EN MOVIL-->
-      <div >
-        <form>
-        <input class="search" type="text" placeholder="Buscar" id="Busqueda">
-        <button class="button_loupe" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+      <div>
+        <form class="search">
+        <input type="text" placeholder="Buscar" id="Busqueda">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
         </form>
       </div>
       <!--Icono de Microfono-->
@@ -47,48 +48,195 @@
       <div>
         <!--Boton de acceder a tu cuenta de google-->
         <a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Des-419%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&ec=65620&hl=es-419&passive=true&service=youtube&uilel=3&ifkv=AaSxoQzWHwqu57HJ44jrMf2JQ-JxqkXw4EKu2xwYdut8nTkP-fn7d7meS0Igazg7oX77muf4EWZiLg&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
-        <button type="submit"><img width="40px" src="./Img/icone-utilisateur-bleu.png" alt="Acceder">Acceder</button>
+        <button type="submit"><img width="25px" src="./Img/icone-utilisateur-bleu.png" alt="Acceder">Acceder</button>
         </a>
       </div>
     </div>
   </nav>
-   <!--Barra de categoria y videos-->
-   <div class="central_options">
-    <div class="category">
-    <ul>
-      <li><button>Todo</button> </li>
-      <li> <button>Música</button></li>
-      <li><button>Mixes</button></li>
-      <li><button>Videojuegos</button></li>
-      <li><button>J-Rock</button></li>
-      <li><button>Listas de Reproducción</button></li>
-      <li><button>Pop indie</button></li>
-      <li><button>Series de televisión</button></li>
-      <li><button>Pop electronico</button></li>
-      <li><button>En directo</button></li>
-    </ul>
+
+  <!--CONTENIDO-->
+  <div class="content">
+    <!--Barra izquierda-->
+    <div class="options" >
+      <!--Boton inicio-->
+      <div class="star">
+        <button><i class="fa-solid fa-house"></i>Inicio</button>
+      </div>
+      <!--Boton de short-->
+      <div class="shorts">
+        <button><img src="./Img/channels4_profile-Photoroom.png" alt="shorts" width="20px">Shorts</button>
+      </div>
+      <!--Boton Suscripciones-->
+      <div class="sub">
+        <button><img src="./Img/Diseño sin título-Photoroom.png" alt="sub" width="20px">Suscripción</button>
+      </div>
+      <!--Boton Tú-->
+      <div class="you">
+        <button><img src="./Img/Diseño sin título (1)-Photoroom.png" alt="you" width="20px">Tú</button>
+      </div>
+    </div>
+    
+    <!--Barra de categoria y videos-->
+    <div class="ca_vi">
+      <div>
+        <div>
+          <ul>
+            <li><button class="inicio">Todo</button> </li>
+            <li><button>Música</button></li>
+            <li><button>Mixes</button></li>
+            <li><button>Videojuegos</button></li>
+            <li><button>J-Rock</button></li>
+            <li><button>Listas de Reproducción</button></li>
+            <li><button>Pop indie</button></li>
+            <li><button>Series de televisión</button></li>
+            <li><button class="ca">Pop electronico</button></li>
+            <li><button class="ca">League of legends</button></li>
+            <li><button class="ca">metal alternativo</button></li>
+            <li><button class="ca">Valorant</button></li>
+            <li><button class="ca">Visto</button></li>
+            <i class="fa-solid fa-arrow-right"></i>
+          </ul>
+        </div>
+      </div>
+
+      <!--Videos-->
+      <div class="videos">
+        <!--Video 1-->
+        <a href="https://www.youtube.com/watch?v=MyV8DhouDXY&list=RDMyV8DhouDXY&index=2">
+          <button> 
+            <img src="https://i3.ytimg.com/vi/MyV8DhouDXY/maxresdefault.jpg" alt="Core Deep Learning Course For Beginners">
+            <div class="icon">
+              <div>
+                <img src="https://yt3.ggpht.com/ytc/AIdro_lEq1Lz0el99ckOXDMo3gjxfsop37KqOELcAaxdRxocZQ=s88-c-k-c0x00ffffff-no-rj" alt="八王子P">
+              </div>
+              <div>
+                <h3>八王子P「PARTY ROCK ETERNITY</h3>
+                <p>八王子P</p>
+                <p>921 K visualizaciones ° hace 2 meses</p>
+              </div>
+            </div>
+          </button>
+        </a>
+
+        <!--Video 2-->
+        <a href="https://www.youtube.com/watch?v=IKmPci5VXz0">
+          <button> 
+            <img src="https://i3.ytimg.com/vi/IKmPci5VXz0/maxresdefault.jpg" alt="Core Deep Learning Course For Beginners">
+            <div class="icon">
+              <div>
+                <img src="https://yt3.ggpht.com/OyRBb0qB1OJT-NPE6Mji_iHeq0tzU8ijk3ZXSKrTNzMSSlDDEcuxz0GDF7VKagQeub62G2IHdQ=s88-c-k-c0x00ffffff-no-nd-rj" alt="八王子P">
+              </div>
+              <div>
+                <h3>Natalia Lafourcade - Hasta la Raíz</h3>
+                <p>Natalia Lafourcade</p>
+                <p>415 M de visualizaciones ° hace 9 años </p>
+              </div>
+            </div>
+          </button>
+        </a>
+
+        <!--Video 3-->
+        <a href="https://www.youtube.com/watch?v=v7GMG1aLyPw">
+          <button> 
+            <img src="https://i3.ytimg.com/vi/v7GMG1aLyPw/maxresdefault.jpg">
+            <div class="icon">
+              <div>
+                <img src="https://yt3.ggpht.com/y43pDosgWWUA0ty-9omaGWUE79cPSC37IJXGDheBP96mpzPt1feV3QhGbeoJo1FdNLVfbwGlfg=s88-c-k-c0x00ffffff-no-rj" alt="八王子P">
+              </div>
+              <div>
+                <h3>Sonne</h3>
+                <p>Rammstein Official</p>
+                <p> 37 M de visualizaciones ° hace 5 años</p>
+              </div>
+            </div>
+          </button>
+        </a>
+
+        <!--Video 4-->
+        <a href="https://www.youtube.com/watch?v=kagoEGKHZvU">
+          <button> 
+            <img src="https://i3.ytimg.com/vi/kagoEGKHZvU/maxresdefault.jpg">
+            <div class="icon">
+              <div>
+                <img src="https://yt3.ggpht.com/Bpx1Qd25huJeAeEmdtIO2ghIycBmeavKAKhe1iG19f1B2ONk6KtMupEGkj-IOK1t-AGfvcMq9yo=s88-c-k-c0x00ffffff-no-nd-rj" alt="八王子P">
+              </div>
+              <div>
+                <h3>【imase】NIGHT DANCER（MV）</h3>
+                <p>imase</p>
+                <p> 194 M de visualizaciones ° hace 1 año</p>
+              </div>
+            </div>
+          </button>
+        </a>
+
+        <!--Video 5-->
+        <a href="https://www.youtube.com/watch?v=ABQvefYR9ec">
+          <button> 
+            <img src="https://i3.ytimg.com/vi/ABQvefYR9ec/maxresdefault.jpg">
+            <div class="icon">
+              <div>
+                <img src="https://yt3.googleusercontent.com/CgJdimI7UFMROkmSQmyoQXa9CXP7FTyU2wLaKdPVfi20u-tjTmOsFuHom4iCb0UYOwRwcasj=s160-c-k-c0x00ffffff-no-rj" alt="八王子P">
+              </div>
+              <div>
+                <h3>Glorious Day feat. 初音ミク - Eve Music Video</h3>
+                <p>Eve</p>
+                <p>3,6 M de visualizaciones ° hace 1 mes</p>
+              </div>
+            </div>
+          </button>
+        </a>
+
+        <!--Video 6-->
+        <a href="https://www.youtube.com/watch?v=ZRtdQ81jPUQ">
+          <button> 
+            <img src="https://i3.ytimg.com/vi/ZRtdQ81jPUQ/maxresdefault.jpg">
+            <div class="icon">
+              <div>
+                <img src="https://yt3.ggpht.com/ytc/AIdro_nMWGqyr97pm_Gwii1PfkXIYJd4QYOiMP779zRdYQh49II=s88-c-k-c0x00ffffff-no-rj-mo" alt="八王子P">
+              </div>
+              <div>
+                <h3>YOASOBI「アイドル」 Official Music Video</h3>
+                <p>Ayase / YOASOBI</p>
+                <p> 471.493.243 visualizaciones ° hace 1 año</p>
+              </div>
+            </div>
+          </button>
+        </a>
+
+        <!--Video 7-->
+        <a href="https://www.youtube.com/watch?v=h_D3VFfhvs4">
+          <button> 
+            <img src="https://i3.ytimg.com/vi/h_D3VFfhvs4/maxresdefault.jpg">
+            <div class="icon">
+              <div>
+                <img src="https://yt3.ggpht.com/DYNuiKlx93gnqckBObvCa_HSW8iR-XQNqND9OAVBgrTKEnxtVZaGQ_WYfH3DA6nmeCmhraRC=s88-c-k-c0x00ffffff-no-nd-rj" alt="八王子P">
+              </div>
+              <div>
+                <h3>Michael Jackson - Smooth Criminal (Official Video)</h3>
+                <p>Michael Jackson</p>
+                <p>943 M de visualizaciones ° hace 13 años</p>
+              </div>
+            </div>
+          </button>
+        </a>
+         <!--Video 8-->
+         <a href="https://www.youtube.com/watch?v=djV11Xbc914">
+          <button> 
+            <img src="https://i3.ytimg.com/vi/djV11Xbc914/maxresdefault.jpg">
+            <div class="icon">
+              <div>
+                <img src="https://yt3.ggpht.com/EH7qmIdqqk-rrt8l4XEf_pEr81yyFCEJARroqprv_wAm9uOZHNXddjgzLVHr8ezfadm4jxzD4A=s88-c-k-c0x00ffffff-no-nd-rj" alt="八王子P">
+              </div>
+              <div>
+                <h3>a-ha - Take On Me (Video Oficial)</h3>
+                <p>a-ha</p>
+                <p>1931 M de visualizaciones ° hace 14 años</p>
+              </div>
+            </div>
+          </button>
+        </a>
+      </div>
     </div>
   </div>
-  <!--Barra izquierda-->
-  <div class="options" >
-    <!--Boton inicio-->
-    <div class="star">
-      <button><i class="fa-solid fa-house"></i>Inicio</button>
-    </div>
-    <!--Boton de short-->
-    <div class="shorts">
-      <button><img src="./Img/channels4_profile-Photoroom.png" alt="shorts" width="35px">Shorts</button>
-    </div>
-    <!--Boton Suscripciones-->
-    <div class="sub">
-      <button><img src="./Img/Diseño sin título-Photoroom.png" alt="sub" width="55px">Suscripción</button>
-    </div>
-    <!--Boton Tú-->
-    <div class="you">
-      <button><img src="./Img/Diseño sin título (1)-Photoroom.png" alt="you" width="55px">Tú</button>
-    </div>
-  </div>
- 
-  
 </body>
 </html>
