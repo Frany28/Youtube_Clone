@@ -336,7 +336,7 @@ ul button:hover{
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 680px){
   .search input{
     display: none;
   }
@@ -357,10 +357,14 @@ ul button:hover{
   .ca1{
     display: none;
   }
+
+  .fa-arrow-right{
+    left: 65%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
   .videos img{
     width: 350px;
   }
@@ -379,7 +383,7 @@ ul button:hover{
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 800px) {
 
   .videos{
     display: grid;
@@ -387,10 +391,6 @@ ul button:hover{
     grid-gap: 9px 10px;
   }
 
-  .ca{
-    display: none;
-  }
-  
   .fa-arrow-right{
     left: 95%;
   }
