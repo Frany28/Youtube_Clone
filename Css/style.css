@@ -165,6 +165,7 @@ nav{
   cursor: pointer;
   padding: 15px 10px;
   font-size: 10px;
+  gap: 5px;
 }
 
 .shorts button{
@@ -179,6 +180,7 @@ nav{
   cursor: pointer;
   padding: 15px 10px;
   font-size: 10px;
+  gap: 5px;
 }
 
 .sub button{
@@ -192,7 +194,8 @@ nav{
   border-radius: 10px;
   cursor: pointer;
   padding: 15px 0px;
-  font-size: 9px;
+  font-size: 10px;
+  gap: 5px;
 }
 
 .you button{
@@ -206,7 +209,8 @@ nav{
   border-radius: 10px;
   cursor: pointer;
   padding: 15px 15px;
-  font-size: 9px;
+  font-size: 10px;
+  gap: 5px;
 }
 
 .options button:hover{
