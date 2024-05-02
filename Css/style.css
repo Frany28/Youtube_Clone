@@ -15,6 +15,10 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 12px 5px;
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que la barra esté por encima del contenido */
 }
 
 /*Boton de barra en el navegador*/
@@ -137,7 +141,7 @@ nav{
 /*Grid para el contenido*/
 .content{
   display: grid;
-  grid-template-columns: 4% 96%;
+  grid-template-columns: 5% 95%;
   justify-content: center;
 }
 
@@ -299,7 +303,7 @@ ul button:hover{
   word-wrap: break-word;
 }
 .videos p{
-  font-size: 13px;
+  font-size: 100%;
   color: rgb(150, 149, 149);
   padding: 2px 2px;
   text-align: left;
@@ -359,6 +363,10 @@ ul button:hover{
   .ca_vi{
     padding-left: 25px;
   }
+
+  .ca{
+    display: none;
+  }
 }
 
 /*Medium devices (landscape tablets, 768px and up)*/
@@ -380,10 +388,10 @@ ul button:hover{
     width: 400px;
   }
 
-  .ca{
-    display: none;
+  .ca_vi{
+    padding-left: 9px;
   }
-
+ 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
