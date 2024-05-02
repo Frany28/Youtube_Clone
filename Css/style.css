@@ -18,7 +18,7 @@ nav{
   /*position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* Asegura que la barra esté por encima del contenido */
+  x-index: 1000; /* Asegura que la barra esté por encima del contenido*/
 }
 
 /*Boton de barra en el navegador*/
@@ -370,7 +370,7 @@ ul button:hover{
 }
 
 /*Medium devices (landscape tablets, 768px and up)*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .videos{
     grid-template-columns: repeat(2, 1fr); /* 4 columnas iguales */
     grid-template-rows: repeat(2, 1fr); /* 3 filas iguales */
@@ -412,79 +412,7 @@ ul button:hover{
     padding-left: 0px;
   }
 }
-/* 
-@media only screen and (max-width: 790px){
-  .search input{
-    display: none;
-  }
-  .items{
-    display: none;
-  }
-  .search button{
-    outline: none;
-    background-color: transparent;
-  }
-  .options{
-    display: none;
-  }
 
-  .ca{
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 680px){
-  
-  .ca{
-    display: none;
-  }
-  .ca1{
-    display: none;
-  }
-
-  .fa-arrow-right{
-    left: 65%;
-  }
-
-}
-
-
-
-@media only screen and (min-width: 800px) {
-
-  .videos{
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-gap: 9px 10px;
-  }
-
-  .fa-arrow-right{
-    left: 95%;
-  }
-}
-
-/* Large devices (laptops/desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {
-  .videos img{
-    width: 340px;
-  }
-  .videos h3{
-    font-size: 13px;
-    word-wrap: break-word;
-  }
-  .icon img{
-    width: 25px;
-  }
-  .videos{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 9px 10px;
-  }
-
-  .fa-arrow-right{
-    left: 95%;
-  }
-}*/
 
 
 
