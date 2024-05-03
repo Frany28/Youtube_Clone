@@ -72,34 +72,12 @@ nav{
   align-items: center;
 }
 
-/*Barra de busqueda*/
-.search input{
-  color: white;
-  flex: 1;
-  background-color:transparent; /* Color de fondo del botón */
-  border:none;
-  outline: 1px solid #4e4d4dd0;
-  cursor: pointer;
-  padding: 10px 15px; /* Ajustar el padding para el tamaño del botón */
-  border-top-left-radius: 20px; /* Hacer el borde superior izquierdo redondeado */
-  border-bottom-left-radius: 20px; /* Hacer el borde inferior izquierdo redondeado */
-  border-top-right-radius: 0; /* Hacer el borde superior derecho plano */
-  border-bottom-right-radius: 0; /* Hacer el borde inferior derecho plano */
-  width: 540px;
-  font-size: 15px;
-  
-}
 
 .search button{
-  background-color: rgba(52, 51, 51, 0.663);
+  outline: none;
+  background-color: transparent;
   border:none;
-  outline: 1px solid #4e4d4dd0;
   cursor: pointer;
-  border-top-left-radius: 0; /* Hacer el borde superior izquierdo redondeado */
-  border-bottom-left-radius: 0; /* Hacer el borde inferior izquierdo redondeado */
-  border-top-right-radius: 20px; /* Hacer el borde superior derecho plano */
-  border-bottom-right-radius: 20px; /* Hacer el borde inferior derecho plano */
-  padding: 4.7px 15px;
 }
 
 /*lado derecho de barra de navegacion*/
@@ -141,7 +119,7 @@ nav{
 /*Grid para el contenido*/
 .content{
   display: grid;
-  grid-template-columns: 5% 95%;
+  grid-template-columns: 100%;
   justify-content: center;
 }
 
@@ -152,7 +130,7 @@ nav{
   align-items: baseline;
   justify-content: baseline;
   padding-left: 5px;
-  width: 72px;
+  width: 60px;
   height: 640px;
 }
 
@@ -223,10 +201,11 @@ nav{
 ul{
   display: flex;
   flex-grow: 2;
-  justify-content: center;
+  justify-content: space-between;
   align-items:center;
   list-style-type: none; /* Elimina los marcadores de la lista */
   gap: 15px;
+  padding-left: 15px;
 }  
 
 ul button{
@@ -253,9 +232,8 @@ ul button:hover{
 .ca_vi{
   display: flex;
   flex-direction: column;
-  align-items:baseline;
+  align-items:center;
   justify-content:center;
-  padding-left: 20px;
 }
 .inicio{
   background-color: white;
@@ -276,13 +254,12 @@ ul button:hover{
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-  grid-template-rows: repeat(3, 1fr); /* 3 filas iguales */
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 .videos img{
   width: 100%;
+  max-width: 480px;
   border-radius: 20px;
   height: auto;
 }
@@ -321,35 +298,39 @@ ul button:hover{
   border-radius: 20px;
 }
 
+.search input{
+  display: none;
+}
+
+.ca1{
+  display: none;
+}
+
+.ca{
+  display: none;
+}
+
+.ca2{
+  display: none;
+}
+
+
 /*Tamaño pequeño*/
-@media screen and (max-width: 768px) {
-  .search input{
-    display: none;
-  }
+@media screen and (max-width: 600px) {
+  
   .items{
     display: none;
-  }
-  .search button{
-    outline: none;
-    background-color: transparent;
   }
 
   .videos {
     grid-template-columns: repeat(
       auto-fit,
       minmax(
-        480px,
+        320px,
         1fr
       )
     );
-    padding: 20px 45px;
-  }
-
-  .ca{
-    display: none;
-  }
-  .ca1{
-    display: none;
+    padding: 20px 20px;
   }
 
   .fa-arrow-right{
@@ -360,17 +341,38 @@ ul button:hover{
     display: none;
   }
 
-  .ca_vi{
-    padding-left: 25px;
-  }
+}
 
-  .ca{
+@media only screen and (min-width: 600px){
+  
+  .items{
     display: none;
   }
+
+  .videos {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+        320px,
+        1fr
+      )
+    );
+    padding: 10px 20px;
+  }
+
+  .fa-arrow-right{
+    left: 85%;
+  }
+
+  .options{
+    display: none;
+  }
+
 }
 
 /*Medium devices (landscape tablets, 768px and up)*/
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 780px) {
+
   .videos{
     grid-template-columns: repeat(2, 1fr); /* 4 columnas iguales */
     grid-template-rows: repeat(2, 1fr); /* 3 filas iguales */
@@ -384,23 +386,64 @@ ul button:hover{
     width: 25px;
   }
   
-  .search input{
-    width: 400px;
+  .content{
+    grid-template-columns: 60px auto;
   }
 
-  .ca_vi{
-    padding-left: 9px;
+  .options{
+    display: flex;
+  }
+
+  .ca1{
+    display: flex;
   }
  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 975px) {
   .videos{
     grid-template-columns: repeat(3, 1fr); /* 4 columnas iguales */
     grid-template-rows: repeat(2, 1fr); /* 3 filas iguales */
   }
+
+  .search button{
+    background-color: rgba(52, 51, 51, 0.663);
+    outline: 1px solid #4e4d4dd0;
+    border-top-left-radius: 0; /* Hacer el borde superior izquierdo redondeado */
+    border-bottom-left-radius: 0; /* Hacer el borde inferior izquierdo redondeado */
+    border-top-right-radius: 20px; /* Hacer el borde superior derecho plano */
+    border-bottom-right-radius: 20px; /* Hacer el borde inferior derecho plano */
+    padding: 4.7px 15px;
+  }
+
+  /*Barra de busqueda*/
+  .search input{
+    display: flex;
+    color: white;
+    flex: 1;
+    background-color:transparent; /* Color de fondo del botón */
+    border:none;
+    outline: 1px solid #4e4d4dd0;
+    cursor: pointer;
+    padding: 10px 15px; /* Ajustar el padding para el tamaño del botón */
+    border-top-left-radius: 20px; /* Hacer el borde superior izquierdo redondeado */
+    border-bottom-left-radius: 20px; /* Hacer el borde inferior izquierdo redondeado */
+    border-top-right-radius: 0; /* Hacer el borde superior derecho plano */
+    border-bottom-right-radius: 0; /* Hacer el borde inferior derecho plano */
+    width: 340px;
+    font-size: 15px;
+    
+  }
+  .ca{
+    display: flex;
+  }
+
+  .ul > button{
+    overflow-x: hidden;
+  }
 }
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px){
@@ -408,11 +451,20 @@ ul button:hover{
     grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
     grid-template-rows: repeat(3, 1fr); /* 3 filas iguales */
   }
-  .ca_vi{
-    padding-left: 0px;
+
+  .ca2{
+    display: flex;
+  }
+
+  .fa-arrow-right{
+    left: 95%;
+  }
+
+  .ul{
+    padding-left: 10px;
+    
   }
 }
-
 
 
 
